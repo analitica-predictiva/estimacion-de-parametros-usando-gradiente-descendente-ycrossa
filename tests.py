@@ -51,6 +51,7 @@ def test_01():
             assert x_poly[i, j] == x_expected[i, j]
 
 
+
 def test_02():
     """
     ---< Run command >-------------------------------------------------------------------
@@ -60,6 +61,7 @@ def test_02():
     """
     params = preguntas.pregunta_02()
     expected = np.array([0.666, -3.0, 2.032])
+    #print(params, expected)
     assert np.allclose(params, expected, atol=1e-3)
 
 
